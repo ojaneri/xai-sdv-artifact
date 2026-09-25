@@ -1,0 +1,18 @@
+{
+ "experiment_id": "f4dafcdf-11f0-4148-bbec-0b1de486c22a",
+ "platform": "shepherd-nova",
+ "mcu": "nRF52840 @ 64 MHz",
+ "target_id": 5,
+ "duration_s": 900,
+ "virtual_source": "direct",
+ "energy_environment": "synthetic_static_3000mV_50mA",
+ "firmware": "xai_nrf52840.elf",
+ "firmware_sha256": "d5a73edc721d275136332c965c8e03ae6a267d4c5224b57460360259d38e0e2a",
+ "submitted_at": "2026-09-25T00:34:23.687335+00:00",
+ "final_state": "finished",
+ "downloaded": true,
+ "files": {
+  "2026-09-25_00-36-59_xai-xai-nrf52840-r1/experiment_config.yaml": "a760c28c7b2bb606f3fe87024ae9030846079184ffabcdf69b8afbe251809282",
+  "2026-09-25_00-36-59_xai-xai-nrf52840-r1/sheep09.h5": "0086bad2d3ddd69e89724fcf297cd5798ec27e11fbeacb9e800aac8febc69dcd"
+ }
+}

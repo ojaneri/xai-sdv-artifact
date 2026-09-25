@@ -1,0 +1,31 @@
+0
+READY
+method                             median       p99  x infer   inferences
+-------------------------------------------------------------------------
+inference only (no XAI)             0.25ms     0.29ms     1.0x            1
+SHAP (Tree, exact)                  0.70ms     0.74ms     2.8x            0
+SHAP (Kernel, model-agnostic)     534.73ms   536.81ms  2152.7x       209601
+LIME                               49.00ms    49.39ms   197.3x         5000
+
+-> results/tabular_c7g.json
+---
+t_fwd calibrated = 84.72 ms  (1 pass, ResNet18/224/1 thread)
+
+OCCLUSION — model: T = N_img * t_fwd   (no fitted parameter)
+ stride   images   measured  predicted   error
+     32       50      4222ms      4236ms   -0.3%
+     16      170     14796ms     14403ms    2.7%
+      8      626     53253ms     53038ms    0.4%
+
+INTEGRATED GRADIENTS — model: T = N_img * t_fwd * k
+k calibrated ONLY on n_steps=5:  k = 2.061
+
+ n_steps   images   measured  predicted   error
+       5        5       875ms       873ms    0.2% (calibration)
+      10       10      1672ms      1746ms   -4.3%
+      20       20      3249ms      3492ms   -7.0%
+      50       50      8306ms      8730ms   -4.9%
+
+absolute error on the 6 NON-calibrated points: median 3.5%  max 7.0%
+-> results/model_validation.json
+DONE

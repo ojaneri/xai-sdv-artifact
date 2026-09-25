@@ -1,0 +1,26 @@
+{
+  "prediction": {
+    "flagged": 2,
+    "n": 20895,
+    "prob_max": 0.9607506394386292,
+    "true_rate": 0.52122517348648
+  },
+  "features": {
+    "nan": 0,
+    "inf": 0,
+    "constant_cols": 2
+  },
+  "masq_trained": {
+    "f1": 0.9661601566141512,
+    "recall": 0.9516114222752732,
+    "timing_mass": 0.002884549554437399,
+    "top": [
+      "byte5",
+      "byte3",
+      "byte2",
+      "byte1",
+      "bytes_changed"
+    ]
+  },
+  "verdict": "transfer_failure"
+}

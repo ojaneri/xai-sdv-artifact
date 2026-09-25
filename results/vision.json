@@ -1,0 +1,60 @@
+{
+  "meta": {
+    "seed": 20260823,
+    "model": "resnet18 (2 classes, random init)",
+    "input": "1x3x224x224",
+    "threads": 1,
+    "platform": "AMD EPYC, 1 thread",
+    "budget_ms": {
+      "smirk_frame_10fps": 100,
+      "can_ids_detect_respond": 50
+    },
+    "method_note": "pesos aleatorios: mede-se CUSTO, nao qualidade de explicacao. O custo depende da arquitetura e do tamanho da entrada, nao dos valores dos pesos."
+  },
+  "results": [
+    {
+      "method": "inference only (no XAI)",
+      "n": 300,
+      "model_forwards": 1,
+      "warmup": 5,
+      "median_ms": 63.272,
+      "p95_ms": 80.564,
+      "p99_ms": 85.609,
+      "max_ms": 95.65,
+      "x_vs_inference": 1.0
+    },
+    {
+      "method": "Grad-CAM",
+      "n": 100,
+      "model_forwards": 1,
+      "warmup": 5,
+      "median_ms": 78.455,
+      "p95_ms": 94.494,
+      "p99_ms": 100.334,
+      "max_ms": 103.688,
+      "x_vs_inference": 1.2
+    },
+    {
+      "method": "Integrated Gradients (50 steps)",
+      "n": 5,
+      "model_forwards": 1,
+      "warmup": 2,
+      "median_ms": 7934.236,
+      "p95_ms": 8324.354,
+      "p99_ms": 8324.354,
+      "max_ms": 8324.354,
+      "x_vs_inference": 125.4
+    },
+    {
+      "method": "Occlusion (32x32 stride 16)",
+      "n": 5,
+      "model_forwards": 170,
+      "warmup": 2,
+      "median_ms": 10833.584,
+      "p95_ms": 11193.305,
+      "p99_ms": 11193.305,
+      "max_ms": 11193.305,
+      "x_vs_inference": 171.2
+    }
+  ]
+}

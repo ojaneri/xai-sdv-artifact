@@ -1,0 +1,98 @@
+{
+  "attr_timing_mass": 0.2878827266395092,
+  "rows": [
+    {
+      "base": "correlated_signal_attack_1",
+      "id": "0x6e0",
+      "fab": 0.09691506157470739,
+      "mas": 0.7224533515254259,
+      "train": false
+    },
+    {
+      "base": "correlated_signal_attack_2",
+      "id": "0x6e0",
+      "fab": 0.6532552079889986,
+      "mas": 0.7172853099982366,
+      "train": false
+    },
+    {
+      "base": "correlated_signal_attack_3",
+      "id": "0x6e0",
+      "fab": 0.6751030423925429,
+      "mas": 0.7216258197301981,
+      "train": false
+    },
+    {
+      "base": "max_engine_coolant_temp_attack",
+      "id": "0x4e7",
+      "fab": 0.031424769513227035,
+      "mas": 0.031424769513227035,
+      "train": false
+    },
+    {
+      "base": "max_speedometer_attack_1",
+      "id": "0xd0",
+      "fab": 0.01355912399579684,
+      "mas": 0.04825909570628395,
+      "train": true
+    },
+    {
+      "base": "max_speedometer_attack_2",
+      "id": "0xd0",
+      "fab": 0.02229998974817854,
+      "mas": 0.05487959067863657,
+      "train": true
+    },
+    {
+      "base": "max_speedometer_attack_3",
+      "id": "0xd0",
+      "fab": 0.02817995800066206,
+      "mas": 0.053402161204738924,
+      "train": false
+    },
+    {
+      "base": "reverse_light_off_attack_1",
+      "id": "0xd0",
+      "fab": 0.04731050440777651,
+      "mas": 0.04902377612413883,
+      "train": true
+    },
+    {
+      "base": "reverse_light_off_attack_2",
+      "id": "0xd0",
+      "fab": 0.047001025974039656,
+      "mas": 0.05682066171099498,
+      "train": true
+    },
+    {
+      "base": "reverse_light_off_attack_3",
+      "id": "0xd0",
+      "fab": 0.05186520457076038,
+      "mas": 0.05892085501870459,
+      "train": false
+    },
+    {
+      "base": "reverse_light_on_attack_1",
+      "id": "0xd0",
+      "fab": 0.050566744500195604,
+      "mas": 0.06633035921787467,
+      "train": true
+    },
+    {
+      "base": "reverse_light_on_attack_2",
+      "id": "0xd0",
+      "fab": 0.018724027412153982,
+      "mas": 0.0668778912182774,
+      "train": true
+    },
+    {
+      "base": "reverse_light_on_attack_3",
+      "id": "0xd0",
+      "fab": 0.020548472417568187,
+      "mas": 0.03786350614835324,
+      "train": false
+    }
+  ],
+  "margin": -0.6436782728793159,
+  "refuted": true
+}

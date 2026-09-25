@@ -1,0 +1,37 @@
+[
+  {
+    "batch": 2,
+    "median_ratio": 0.917,
+    "p10": 0.877,
+    "p90": 0.965,
+    "significant": true
+  },
+  {
+    "batch": 5,
+    "median_ratio": 0.904,
+    "p10": 0.843,
+    "p90": 0.969,
+    "significant": true
+  },
+  {
+    "batch": 10,
+    "median_ratio": 0.895,
+    "p10": 0.817,
+    "p90": 0.916,
+    "significant": true
+  },
+  {
+    "batch": 20,
+    "median_ratio": 0.995,
+    "p10": 0.938,
+    "p90": 1.029,
+    "significant": false
+  },
+  {
+    "batch": 50,
+    "median_ratio": 1.073,
+    "p10": 0.96,
+    "p90": 1.164,
+    "significant": false
+  }
+]

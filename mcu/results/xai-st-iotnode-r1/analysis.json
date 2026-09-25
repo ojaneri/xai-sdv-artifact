@@ -1,0 +1,144 @@
+{
+ "source": "results/xai-st-iotnode-r1/raw_console.log",
+ "hz": 16000000.0,
+ "blocks": 21,
+ "correctness": {
+  "checked": 16,
+  "max_abs_err_margin": 3.98690795933021e-06,
+  "max_abs_err_treeshap": 2.0151519775080118e-06,
+  "ok": true,
+  "dropped_incomplete_lines": 1
+ },
+ "ops": {
+  "spin1s": {
+   "n": 3,
+   "passes_per_rep": [
+    0.0
+   ],
+   "cyc_median": 16000134.0,
+   "cyc_cv_pct": 4.124756215142122e-05,
+   "ms_median": 1000.008375
+  },
+  "infer_test": {
+   "n": 3,
+   "passes_per_rep": [
+    1.0
+   ],
+   "cyc_median": 22227.6445,
+   "cyc_cv_pct": 3.711405982733843e-05,
+   "ms_median": 1.3892277812499998
+  },
+  "infer_bg": {
+   "n": 3,
+   "passes_per_rep": [
+    1.0
+   ],
+   "cyc_median": 21721.907,
+   "cyc_cv_pct": 7.161590972695585e-05,
+   "ms_median": 1.3576191874999999
+  },
+  "treeshap": {
+   "n": 2,
+   "passes_per_rep": [
+    0.0
+   ],
+   "cyc_median": 8324367.2925,
+   "cyc_cv_pct": 5.315719319023579e-06,
+   "ms_median": 520.27295578125
+  },
+  "occlusion": {
+   "n": 2,
+   "passes_per_rep": [
+    25.0
+   ],
+   "cyc_median": 596251.2949999999,
+   "cyc_cv_pct": 0.009280482988304615,
+   "ms_median": 37.265705937499995
+  },
+  "lime5000": {
+   "n": 2,
+   "passes_per_rep": [
+    5000.0
+   ],
+   "cyc_median": 138286629.16666666,
+   "cyc_cv_pct": 0.005765199461468784,
+   "ms_median": 8642.914322916666
+  },
+  "kernel21": {
+   "n": 2,
+   "passes_per_rep": [
+    2101.0
+   ],
+   "cyc_median": 51634802.16666667,
+   "cyc_cv_pct": 0.0708808112569759,
+   "ms_median": 3227.175135416667
+  },
+  "kernel210": {
+   "n": 2,
+   "passes_per_rep": [
+    21001.0
+   ],
+   "cyc_median": 509129649.0,
+   "cyc_cv_pct": 0.003196435334686234,
+   "ms_median": 31820.6030625
+  },
+  "kernel2096": {
+   "n": 2,
+   "passes_per_rep": [
+    209601.0
+   ],
+   "cyc_median": 5081728268.5,
+   "cyc_cv_pct": 0.006016289810203574,
+   "ms_median": 317608.01678125
+  }
+ },
+ "eq1": {
+  "t_pass_cyc": 21721.907,
+  "t_pass_us": 1357.6191875,
+  "occlusion": {
+   "N": 25.0,
+   "measured_cyc": 596251.2949999999,
+   "predicted_cyc": 543047.6749999999,
+   "err_pct": 9.797228208370473
+  },
+  "lime5000": {
+   "N": 5000.0,
+   "measured_cyc": 138286629.16666666,
+   "predicted_cyc": 108609535.0,
+   "err_pct": 27.324575293197466
+  },
+  "kernel21": {
+   "N": 2101.0,
+   "measured_cyc": 51634802.16666667,
+   "predicted_cyc": 45637726.607,
+   "err_pct": 13.140609766365593
+  },
+  "kernel210": {
+   "N": 21001.0,
+   "measured_cyc": 509129649.0,
+   "predicted_cyc": 456181768.907,
+   "err_pct": 11.606750576609357
+  },
+  "kernel2096": {
+   "N": 209601.0,
+   "measured_cyc": 5081728268.5,
+   "predicted_cyc": 4552933429.106999,
+   "err_pct": 11.614376700796987
+  },
+  "same_method": {
+   "t_pass_cyc": 24576.29803268285,
+   "kernel210": {
+    "N": 21001.0,
+    "measured_cyc": 509129649.0,
+    "predicted_cyc": 516126834.98437256,
+    "err_pct": -1.355710556027264
+   },
+   "kernel2096": {
+    "N": 209601.0,
+    "measured_cyc": 5081728268.5,
+    "predicted_cyc": 5151216643.948359,
+    "err_pct": -1.3489701608646838
+   }
+  }
+ }
+}

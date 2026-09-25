@@ -1,0 +1,174 @@
+{
+ "source": "results/xai-nrf52840-r1",
+ "hz": 64000000.0,
+ "hdf5": "results/xai-nrf52840-r1/2026-09-25_00-36-59_xai-xai-nrf52840-r1/sheep09.h5",
+ "gate_windows": 43,
+ "mean_current_mA": 19.84009636001042,
+ "blocks": 43,
+ "correctness": {
+  "checked": 16,
+  "max_abs_err_margin": 3.98690795933021e-06,
+  "max_abs_err_treeshap": 2.0151519775080118e-06,
+  "ok": true,
+  "dropped_incomplete_lines": 0
+ },
+ "ops": {
+  "spin1s": {
+   "n": 5,
+   "passes_per_rep": [
+    0.0
+   ],
+   "cyc_median": 64000075.0,
+   "cyc_cv_pct": 0.0,
+   "ms_median": 1000.001171875,
+   "uJ_median": 60646.051795694046,
+   "mW_median": 61.32718117803123,
+   "window_vs_cycles_err_pct_max": 1.1448111279068742
+  },
+  "infer_test": {
+   "n": 5,
+   "passes_per_rep": [
+    1.0
+   ],
+   "cyc_median": 45649.402,
+   "cyc_cv_pct": 0.0,
+   "ms_median": 0.71327190625,
+   "uJ_median": 42.25900711391271,
+   "mW_median": 59.94114092717769,
+   "window_vs_cycles_err_pct_max": 1.189138506540572
+  },
+  "infer_bg": {
+   "n": 5,
+   "passes_per_rep": [
+    1.0
+   ],
+   "cyc_median": 44640.23,
+   "cyc_cv_pct": 0.0,
+   "ms_median": 0.69750359375,
+   "uJ_median": 41.33694160340833,
+   "mW_median": 59.94557919255604,
+   "window_vs_cycles_err_pct_max": 1.1734957813172446
+  },
+  "treeshap": {
+   "n": 5,
+   "passes_per_rep": [
+    0.0
+   ],
+   "cyc_median": 10600641.485,
+   "cyc_cv_pct": 9.433391515452157e-08,
+   "ms_median": 165.63502320312497,
+   "uJ_median": 9260.880372393594,
+   "mW_median": 56.55053164781323,
+   "window_vs_cycles_err_pct_max": 1.1376581854697754
+  },
+  "occlusion": {
+   "n": 5,
+   "passes_per_rep": [
+    25.0
+   ],
+   "cyc_median": 1143100.895,
+   "cyc_cv_pct": 0.006413926282777146,
+   "ms_median": 17.860951484375,
+   "uJ_median": 1058.2548833352546,
+   "mW_median": 59.90645917837179,
+   "window_vs_cycles_err_pct_max": 1.09641375610894
+  },
+  "lime5000": {
+   "n": 5,
+   "passes_per_rep": [
+    5000.0
+   ],
+   "cyc_median": 244122784.0,
+   "cyc_cv_pct": 0.02738338148547589,
+   "ms_median": 3814.4184999999998,
+   "uJ_median": 228567.37084017973,
+   "mW_median": 60.5697983438153,
+   "window_vs_cycles_err_pct_max": 1.0984782047507602
+  },
+  "kernel21": {
+   "n": 5,
+   "passes_per_rep": [
+    2101.0
+   ],
+   "cyc_median": 89685006.33333333,
+   "cyc_cv_pct": 0.05837440703465234,
+   "ms_median": 1401.3282239583334,
+   "uJ_median": 83473.84910590126,
+   "mW_median": 60.23326301537895,
+   "window_vs_cycles_err_pct_max": 1.1126244243915508
+  },
+  "kernel210": {
+   "n": 4,
+   "passes_per_rep": [
+    21001.0
+   ],
+   "cyc_median": 884510999.0,
+   "cyc_cv_pct": 0.01673220838155929,
+   "ms_median": 13820.484359375,
+   "uJ_median": 822886.6816182316,
+   "mW_median": 60.215906193016814,
+   "window_vs_cycles_err_pct_max": 1.1321982093122605
+  },
+  "kernel2096": {
+   "n": 4,
+   "passes_per_rep": [
+    209601.0
+   ],
+   "cyc_median": 8828711973.5,
+   "cyc_cv_pct": 0.007243883399805897,
+   "ms_median": 137948.6245859375,
+   "uJ_median": 8218956.026035614,
+   "mW_median": 60.2226079785017,
+   "window_vs_cycles_err_pct_max": 1.1140763673501712
+  }
+ },
+ "eq1": {
+  "t_pass_cyc": 44640.23,
+  "t_pass_us": 697.50359375,
+  "occlusion": {
+   "N": 25.0,
+   "measured_cyc": 1143100.895,
+   "predicted_cyc": 1116005.75,
+   "err_pct": 2.4278678671682488
+  },
+  "lime5000": {
+   "N": 5000.0,
+   "measured_cyc": 244122784.0,
+   "predicted_cyc": 223201150.00000003,
+   "err_pct": 9.373443640411336
+  },
+  "kernel21": {
+   "N": 2101.0,
+   "measured_cyc": 89685006.33333333,
+   "predicted_cyc": 93789123.23,
+   "err_pct": -4.375898564060685
+  },
+  "kernel210": {
+   "N": 21001.0,
+   "measured_cyc": 884510999.0,
+   "predicted_cyc": 937489470.23,
+   "err_pct": -5.6511004029733245
+  },
+  "kernel2096": {
+   "N": 209601.0,
+   "measured_cyc": 8828711973.5,
+   "predicted_cyc": 9356636848.230001,
+   "err_pct": -5.642250343721197
+  },
+  "same_method": {
+   "t_pass_cyc": 42686.818816436615,
+   "kernel210": {
+    "N": 21001.0,
+    "measured_cyc": 884510999.0,
+    "predicted_cyc": 896465881.9639853,
+    "err_pct": -1.3335569378049794
+   },
+   "kernel2096": {
+    "N": 209601.0,
+    "measured_cyc": 8828711973.5,
+    "predicted_cyc": 8947199910.74393,
+    "err_pct": -1.3243018869137901
+   }
+  }
+ }
+}

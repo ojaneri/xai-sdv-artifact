@@ -1,0 +1,256 @@
+{
+  "precise": {
+    "rows": [
+      {
+        "base": "correlated_signal_attack_1",
+        "id": "0x6e0",
+        "train": false,
+        "same_id": false,
+        "fab": 0.0,
+        "mas": 0.0028142589118198874,
+        "rec_mas": 0.0014381591562799617
+      },
+      {
+        "base": "correlated_signal_attack_2",
+        "id": "0x6e0",
+        "train": false,
+        "same_id": false,
+        "fab": 0.0,
+        "mas": 0.01943544655252198,
+        "rec_mas": 0.009817671809256662
+      },
+      {
+        "base": "correlated_signal_attack_3",
+        "id": "0x6e0",
+        "train": false,
+        "same_id": false,
+        "fab": 0.0,
+        "mas": 0.0,
+        "rec_mas": 0.0
+      },
+      {
+        "base": "max_engine_coolant_temp_attack",
+        "id": "0x4e7",
+        "train": false,
+        "same_id": false,
+        "fab": 0.8157894736842105,
+        "mas": 0.13043478260869565,
+        "rec_mas": 0.06976744186046512
+      },
+      {
+        "base": "max_speedometer_attack_1",
+        "id": "0xd0",
+        "train": true,
+        "same_id": true,
+        "fab": 0.9997953754859832,
+        "mas": 0.0,
+        "rec_mas": 0.0
+      },
+      {
+        "base": "max_speedometer_attack_2",
+        "id": "0xd0",
+        "train": true,
+        "same_id": true,
+        "fab": 0.9998407389711738,
+        "mas": 0.0,
+        "rec_mas": 0.0
+      },
+      {
+        "base": "max_speedometer_attack_3",
+        "id": "0xd0",
+        "train": false,
+        "same_id": true,
+        "fab": 0.9998362534796136,
+        "mas": 0.0,
+        "rec_mas": 0.0
+      },
+      {
+        "base": "reverse_light_off_attack_1",
+        "id": "0xd0",
+        "train": true,
+        "same_id": true,
+        "fab": 0.9992565055762082,
+        "mas": 0.0029717682020802376,
+        "rec_mas": 0.001488095238095238
+      },
+      {
+        "base": "reverse_light_off_attack_2",
+        "id": "0xd0",
+        "train": true,
+        "same_id": true,
+        "fab": 1.0,
+        "mas": 0.0,
+        "rec_mas": 0.0
+      },
+      {
+        "base": "reverse_light_off_attack_3",
+        "id": "0xd0",
+        "train": false,
+        "same_id": true,
+        "fab": 0.9997946190182789,
+        "mas": 0.0008213552361396304,
+        "rec_mas": 0.0004108463434675431
+      },
+      {
+        "base": "reverse_light_on_attack_1",
+        "id": "0xd0",
+        "train": true,
+        "same_id": true,
+        "fab": 1.0,
+        "mas": 0.0010035122930255895,
+        "rec_mas": 0.000502008032128514
+      },
+      {
+        "base": "reverse_light_on_attack_2",
+        "id": "0xd0",
+        "train": true,
+        "same_id": true,
+        "fab": 1.0,
+        "mas": 0.000541858574911948,
+        "rec_mas": 0.00027100271002710027
+      },
+      {
+        "base": "reverse_light_on_attack_3",
+        "id": "0xd0",
+        "train": false,
+        "same_id": true,
+        "fab": 0.9995746490854955,
+        "mas": 0.0,
+        "rec_mas": 0.0
+      }
+    ],
+    "summary": {
+      "held_out": 7,
+      "collapsed": 6,
+      "median_fab": 0.8157894736842105,
+      "median_mas": 0.0008213552361396304
+    }
+  },
+  "window": {
+    "rows": [
+      {
+        "base": "correlated_signal_attack_1",
+        "id": "0x6e0",
+        "train": false,
+        "same_id": false,
+        "fab": 0.9994009823888822,
+        "mas": 0.0019147917663954045,
+        "rec_mas": 0.0009587727708533077
+      },
+      {
+        "base": "correlated_signal_attack_2",
+        "id": "0x6e0",
+        "train": false,
+        "same_id": false,
+        "fab": 0.9991827203736136,
+        "mas": 0.0018630647414997672,
+        "rec_mas": 0.0009350163627863488
+      },
+      {
+        "base": "correlated_signal_attack_3",
+        "id": "0x6e0",
+        "train": false,
+        "same_id": false,
+        "fab": 0.9992097984986171,
+        "mas": 0.0,
+        "rec_mas": 0.0
+      },
+      {
+        "base": "max_engine_coolant_temp_attack",
+        "id": "0x4e7",
+        "train": false,
+        "same_id": false,
+        "fab": 0.0,
+        "mas": 0.0,
+        "rec_mas": 0.0
+      },
+      {
+        "base": "max_speedometer_attack_1",
+        "id": "0xd0",
+        "train": true,
+        "same_id": true,
+        "fab": 1.0,
+        "mas": 0.0,
+        "rec_mas": 0.0
+      },
+      {
+        "base": "max_speedometer_attack_2",
+        "id": "0xd0",
+        "train": true,
+        "same_id": true,
+        "fab": 1.0,
+        "mas": 0.0012734797835084368,
+        "rec_mas": 0.0006371455877668047
+      },
+      {
+        "base": "max_speedometer_attack_3",
+        "id": "0xd0",
+        "train": false,
+        "same_id": true,
+        "fab": 0.9995906336990339,
+        "mas": 0.0,
+        "rec_mas": 0.0
+      },
+      {
+        "base": "reverse_light_off_attack_1",
+        "id": "0xd0",
+        "train": true,
+        "same_id": true,
+        "fab": 0.9996281145407214,
+        "mas": 0.0029717682020802376,
+        "rec_mas": 0.001488095238095238
+      },
+      {
+        "base": "reverse_light_off_attack_2",
+        "id": "0xd0",
+        "train": true,
+        "same_id": true,
+        "fab": 1.0,
+        "mas": 0.0,
+        "rec_mas": 0.0
+      },
+      {
+        "base": "reverse_light_off_attack_3",
+        "id": "0xd0",
+        "train": false,
+        "same_id": true,
+        "fab": 0.9980478783519984,
+        "mas": 0.0,
+        "rec_mas": 0.0
+      },
+      {
+        "base": "reverse_light_on_attack_1",
+        "id": "0xd0",
+        "train": true,
+        "same_id": true,
+        "fab": 1.0,
+        "mas": 0.0010035122930255895,
+        "rec_mas": 0.000502008032128514
+      },
+      {
+        "base": "reverse_light_on_attack_2",
+        "id": "0xd0",
+        "train": true,
+        "same_id": true,
+        "fab": 1.0,
+        "mas": 0.000541858574911948,
+        "rec_mas": 0.00027100271002710027
+      },
+      {
+        "base": "reverse_light_on_attack_3",
+        "id": "0xd0",
+        "train": false,
+        "same_id": true,
+        "fab": 0.9980887661923975,
+        "mas": 0.0,
+        "rec_mas": 0.0
+      }
+    ],
+    "summary": {
+      "held_out": 7,
+      "collapsed": 7,
+      "median_fab": 0.9991827203736136,
+      "median_mas": 0.0
+    }
+  }
+}

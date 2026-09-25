@@ -1,0 +1,4 @@
+{"experiment_id": 450900, "site": "saclay", "node": "st-iotnode-1", "archi": "st-iotnode",
+ "mcu": "STM32L475VG @ 16 MHz (CLOCK_BENCHMARK)", "duration_min": 40,
+ "firmware": "xai_st-iotnode.elf", "firmware_sha256": "10dad24fb311fd173e9bb37589a7520cf75eb208ba6ab523a579ae976c2848c0",
+ "submitted_at": "2026-09-25T01:02:10Z"}

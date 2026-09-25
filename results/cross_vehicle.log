@@ -1,0 +1,34 @@
+Loading HCRL (Hyundai Sonata, fabrication only):
+   HCRL DoS        600000 rows   21.4% attack
+   HCRL Fuzzy      600000 rows   17.2% attack
+   HCRL gear       600000 rows   17.6% attack
+   HCRL RPM        600000 rows   17.4% attack
+Loading ROAD training (Ford Expedition, fabrication):
+   max_speedometer_attack_1                       213397 rows    1.1% attack
+   max_speedometer_attack_2                       145894 rows    2.2% attack
+   reverse_light_off_attack_1                      67902 rows    1.0% attack
+   reverse_light_off_attack_2                      99628 rows    2.4% attack
+   reverse_light_on_attack_1                      133237 rows    1.5% attack
+   reverse_light_on_attack_2                      175945 rows    2.1% attack
+Loading ROAD held-out:
+   max_speedometer_attack_3                       213551 rows    2.9% attack
+   reverse_light_off_attack_3                     140855 rows    1.7% attack
+   reverse_light_on_attack_3                      156052 rows    1.5% attack
+   max_speedometer_attack_3_masquerade            207444 rows    2.9% attack
+   reverse_light_off_attack_3_masquerade          138421 rows    1.8% attack
+   reverse_light_on_attack_3_masquerade           153701 rows    1.5% attack
+
+Training two detectors...
+
+transfer                    condition                           F1   recall      FPR
+--------------------------------------------------------------------------------------
+HCRL -> HCRL (held-out)     same vehicle, same modality      1.000    1.000   0.0000
+HCRL -> ROAD fabrication    diff vehicle, same modality      0.000    0.000   0.1792
+HCRL -> ROAD masquerade     diff vehicle, diff modality      0.003    0.012   0.1831
+ROAD -> ROAD fabrication    same vehicle, same modality      0.999    1.000   0.0000
+ROAD -> HCRL                diff vehicle, same modality      0.198    0.110   0.0001
+
+timing attribution mass -- HCRL model 51.0%, ROAD model 19.9%
+  HCRL model looks at: id_count_win(50%), bytes_changed(46%), payload_entropy(3%)
+  ROAD model looks at: bytes_changed(78%), id_count_win(19%), byte3(1%)
+-> results/cross_vehicle.json

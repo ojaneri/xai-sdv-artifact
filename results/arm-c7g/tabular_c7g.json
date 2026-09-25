@@ -1,0 +1,61 @@
+{
+  "meta": {
+    "seed": 20260823,
+    "n_features": 24,
+    "model": "XGBClassifier(n_estimators=200, max_depth=6)",
+    "platform": "aarch64 | ARM CPU part 0xd40 | 2 vCPU | single-threaded measurement",
+    "budget_ms": {
+      "can_ids_detect_respond": 50,
+      "smirk_frame_10fps": 100
+    }
+  },
+  "results": [
+    {
+      "method": "inference only (no XAI)",
+      "n": 200,
+      "median_ms": 0.2484,
+      "p99_ms": 0.2902,
+      "min_ms": 0.2274,
+      "max_ms": 0.5764,
+      "model_rows_per_explanation": 1,
+      "peak_kb": 10,
+      "x_vs_inference": 1.0
+    },
+    {
+      "method": "SHAP (Tree, exact)",
+      "n": 800,
+      "median_ms": 0.7018,
+      "p99_ms": 0.7366,
+      "min_ms": 0.6671,
+      "max_ms": 1.1188,
+      "model_rows_per_explanation": 0,
+      "peak_kb": 14,
+      "note": "exact algorithm; never calls the model",
+      "x_vs_inference": 2.8
+    },
+    {
+      "method": "SHAP (Kernel, model-agnostic)",
+      "n": 3,
+      "median_ms": 534.7323,
+      "p99_ms": 536.8131,
+      "min_ms": 534.5509,
+      "max_ms": 536.8131,
+      "model_rows_per_explanation": 209601,
+      "peak_kb": 27640,
+      "background": 100,
+      "x_vs_inference": 2152.7
+    },
+    {
+      "method": "LIME",
+      "n": 3,
+      "median_ms": 49.002,
+      "p99_ms": 49.3884,
+      "min_ms": 48.9326,
+      "max_ms": 49.3884,
+      "model_rows_per_explanation": 5000,
+      "peak_kb": 4973,
+      "lime_samples": 5000,
+      "x_vs_inference": 197.3
+    }
+  ]
+}

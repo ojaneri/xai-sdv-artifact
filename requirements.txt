@@ -1,0 +1,26 @@
+# Pinned to the versions the reported numbers were produced with.
+# Python 3.12. Install into a virtualenv: the host is PEP 668
+# externally-managed and a bare `pip install` fails -- silently, if --quiet is
+# used inside a pipe that swallows the exit code.
+#
+#   python3 -m venv --system-site-packages .venv
+#   .venv/bin/pip install -r requirements.txt
+#
+# Verify by importing the modules, never by pip's exit code.
+
+numpy==2.4.6
+scipy==1.17.1
+pandas==3.0.3
+scikit-learn==1.9.0
+xgboost==3.4.1
+
+# Explanation methods
+shap==0.52.0
+lime==0.2.0.1
+captum==0.9.0
+
+# CPU build is sufficient and is what the cost figures were measured on.
+# torch.set_num_threads(1) is set explicitly in the perception harness: an ECU
+# does not offer eight idle cores to explain a decision it is still making.
+torch==2.12.0
+torchvision==0.27.0

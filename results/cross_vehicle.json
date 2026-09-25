@@ -1,0 +1,41 @@
+{
+  "HCRL -> HCRL (held-out)": {
+    "condition": "same vehicle, same modality",
+    "f1": 1.0,
+    "recall": 1.0,
+    "precision": 1.0,
+    "fpr": 0.0
+  },
+  "HCRL -> ROAD fabrication": {
+    "condition": "diff vehicle, same modality",
+    "f1": 5.9762146656307895e-05,
+    "recall": 0.0002754567991919934,
+    "precision": 3.3516931636631775e-05,
+    "fpr": 0.17916315529248328
+  },
+  "HCRL -> ROAD masquerade": {
+    "condition": "diff vehicle, diff modality",
+    "f1": 0.0025470355888527396,
+    "recall": 0.011752823432191717,
+    "precision": 0.0014282844964181303,
+    "fpr": 0.1831278457052233
+  },
+  "ROAD -> ROAD fabrication": {
+    "condition": "same vehicle, same modality",
+    "f1": 0.9993116424211831,
+    "recall": 0.9997245432008081,
+    "precision": 0.9988990825688073,
+    "fpr": 2.4020802014544597e-05
+  },
+  "ROAD -> HCRL": {
+    "condition": "diff vehicle, same modality",
+    "f1": 0.1981616598051604,
+    "recall": 0.11002727200715183,
+    "precision": 0.9959028986991704,
+    "fpr": 0.00010213696055725926
+  },
+  "timing_mass": {
+    "hcrl_model": 0.5095979571342468,
+    "road_model": 0.19879208505153656
+  }
+}

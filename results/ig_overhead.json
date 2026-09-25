@@ -1,0 +1,30 @@
+[
+  {
+    "n_steps": 5,
+    "pure_passes_ms": 621.3,
+    "ig_ms": 637.9,
+    "ratio": 1.026,
+    "excess_ms": 16.6
+  },
+  {
+    "n_steps": 10,
+    "pure_passes_ms": 1245.0,
+    "ig_ms": 1263.0,
+    "ratio": 0.976,
+    "excess_ms": 18.0
+  },
+  {
+    "n_steps": 20,
+    "pure_passes_ms": 2636.3,
+    "ig_ms": 2634.3,
+    "ratio": 1.0,
+    "excess_ms": -2.0
+  },
+  {
+    "n_steps": 50,
+    "pure_passes_ms": 7607.0,
+    "ig_ms": 7667.1,
+    "ratio": 0.993,
+    "excess_ms": 60.1
+  }
+]

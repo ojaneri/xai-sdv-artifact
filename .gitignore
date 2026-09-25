@@ -1,0 +1,6 @@
+__pycache__/
+.venv/
+data/
+*.h5
+mcu/model.h
+mcu/host_check

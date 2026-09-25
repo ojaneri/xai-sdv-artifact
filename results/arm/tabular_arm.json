@@ -1,0 +1,61 @@
+{
+  "meta": {
+    "seed": 20260823,
+    "n_features": 24,
+    "model": "XGBClassifier(n_estimators=200, max_depth=6)",
+    "platform": "AMD EPYC, 8 vCPU, n_jobs=1",
+    "budget_ms": {
+      "can_ids_detect_respond": 50,
+      "smirk_frame_10fps": 100
+    }
+  },
+  "results": [
+    {
+      "method": "inference only (no XAI)",
+      "n": 200,
+      "median_ms": 0.35,
+      "p99_ms": 0.4254,
+      "min_ms": 0.3236,
+      "max_ms": 0.8088,
+      "model_rows_per_explanation": 1,
+      "peak_kb": 10,
+      "x_vs_inference": 1.0
+    },
+    {
+      "method": "SHAP (Tree, exact)",
+      "n": 800,
+      "median_ms": 0.9764,
+      "p99_ms": 1.1383,
+      "min_ms": 0.9256,
+      "max_ms": 1.4561,
+      "model_rows_per_explanation": 0,
+      "peak_kb": 14,
+      "note": "exact algorithm; never calls the model",
+      "x_vs_inference": 2.8
+    },
+    {
+      "method": "SHAP (Kernel, model-agnostic)",
+      "n": 3,
+      "median_ms": 846.9236,
+      "p99_ms": 858.3583,
+      "min_ms": 836.5266,
+      "max_ms": 858.3583,
+      "model_rows_per_explanation": 209601,
+      "peak_kb": 27643,
+      "background": 100,
+      "x_vs_inference": 2419.8
+    },
+    {
+      "method": "LIME",
+      "n": 3,
+      "median_ms": 77.2903,
+      "p99_ms": 77.468,
+      "min_ms": 76.6282,
+      "max_ms": 77.468,
+      "model_rows_per_explanation": 5000,
+      "peak_kb": 4974,
+      "lime_samples": 5000,
+      "x_vs_inference": 220.8
+    }
+  ]
+}

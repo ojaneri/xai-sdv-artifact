@@ -1,0 +1,277 @@
+{
+ "window_s": 0.01,
+ "min_id_frames": 20,
+ "captures": {
+  "ROAD/ambient_dyno_drive_basic_long": {
+   "frames": 2991272,
+   "duration_s": 1250.944,
+   "ids": 106,
+   "ids_periodic": 103,
+   "rate_fps": 2391.2,
+   "peak_frames_per_10ms": 42,
+   "bus_mean_ms": 0.4182,
+   "bus_peak_ms": 0.2381,
+   "id_fast_ms": 10.0019,
+   "id_fast": "0xd0",
+   "ids_aperiodic": [
+    "0xfff",
+    "0x30a",
+    "0x671"
+   ]
+  },
+  "ROAD/ambient_dyno_drive_basic_short": {
+   "frames": 1063624,
+   "duration_s": 444.751,
+   "ids": 106,
+   "ids_periodic": 103,
+   "rate_fps": 2391.5,
+   "peak_frames_per_10ms": 42,
+   "bus_mean_ms": 0.4181,
+   "bus_peak_ms": 0.2381,
+   "id_fast_ms": 10.0011,
+   "id_fast": "0xd0",
+   "ids_aperiodic": [
+    "0xfff",
+    "0x30a",
+    "0x671"
+   ]
+  },
+  "ROAD/ambient_dyno_drive_benign_anomaly": {
+   "frames": 771519,
+   "duration_s": 456.456,
+   "ids": 106,
+   "ids_periodic": 102,
+   "rate_fps": 1690.2,
+   "peak_frames_per_10ms": 42,
+   "bus_mean_ms": 0.5916,
+   "bus_peak_ms": 0.2381,
+   "id_fast_ms": 10.0139,
+   "id_fast": "0xe",
+   "ids_aperiodic": [
+    "0xfff",
+    "0x30a",
+    "0x671",
+    "0x67d"
+   ]
+  },
+  "ROAD/ambient_dyno_drive_extended_long": {
+   "frames": 1424208,
+   "duration_s": 657.876,
+   "ids": 106,
+   "ids_periodic": 103,
+   "rate_fps": 2164.9,
+   "peak_frames_per_10ms": 42,
+   "bus_mean_ms": 0.4619,
+   "bus_peak_ms": 0.2381,
+   "id_fast_ms": 9.995,
+   "id_fast": "0x33",
+   "ids_aperiodic": [
+    "0xfff",
+    "0x30a",
+    "0x671"
+   ]
+  },
+  "ROAD/ambient_dyno_drive_extended_short": {
+   "frames": 790442,
+   "duration_s": 359.81,
+   "ids": 106,
+   "ids_periodic": 102,
+   "rate_fps": 2196.8,
+   "peak_frames_per_10ms": 42,
+   "bus_mean_ms": 0.4552,
+   "bus_peak_ms": 0.2381,
+   "id_fast_ms": 9.982,
+   "id_fast": "0x6e0",
+   "ids_aperiodic": [
+    "0xfff",
+    "0x30a",
+    "0x25",
+    "0x671"
+   ]
+  },
+  "ROAD/ambient_dyno_drive_radio_infotainment": {
+   "frames": 932852,
+   "duration_s": 390.456,
+   "ids": 106,
+   "ids_periodic": 104,
+   "rate_fps": 2389.1,
+   "peak_frames_per_10ms": 42,
+   "bus_mean_ms": 0.4186,
+   "bus_peak_ms": 0.2381,
+   "id_fast_ms": 10.005,
+   "id_fast": "0xe",
+   "ids_aperiodic": [
+    "0xfff",
+    "0x671"
+   ]
+  },
+  "ROAD/ambient_dyno_drive_winter": {
+   "frames": 114148,
+   "duration_s": 47.731,
+   "ids": 106,
+   "ids_periodic": 103,
+   "rate_fps": 2391.5,
+   "peak_frames_per_10ms": 42,
+   "bus_mean_ms": 0.4181,
+   "bus_peak_ms": 0.2381,
+   "id_fast_ms": 9.9851,
+   "id_fast": "0xd0",
+   "ids_aperiodic": [
+    "0xfff",
+    "0x30a"
+   ]
+  },
+  "ROAD/ambient_dyno_exercise_all_bits": {
+   "frames": 4419422,
+   "duration_s": 2172.804,
+   "ids": 106,
+   "ids_periodic": 103,
+   "rate_fps": 2034.0,
+   "peak_frames_per_10ms": 42,
+   "bus_mean_ms": 0.4916,
+   "bus_peak_ms": 0.2381,
+   "id_fast_ms": 9.9989,
+   "id_fast": "0x6e0",
+   "ids_aperiodic": [
+    "0xfff",
+    "0x30a",
+    "0x671"
+   ]
+  },
+  "ROAD/ambient_dyno_idle_radio_infotainment": {
+   "frames": 1572318,
+   "duration_s": 660.784,
+   "ids": 106,
+   "ids_periodic": 104,
+   "rate_fps": 2379.5,
+   "peak_frames_per_10ms": 40,
+   "bus_mean_ms": 0.4203,
+   "bus_peak_ms": 0.25,
+   "id_fast_ms": 10.003,
+   "id_fast": "0x33",
+   "ids_aperiodic": [
+    "0xfff",
+    "0x671"
+   ]
+  },
+  "ROAD/ambient_dyno_reverse": {
+   "frames": 123047,
+   "duration_s": 51.434,
+   "ids": 106,
+   "ids_periodic": 102,
+   "rate_fps": 2392.3,
+   "peak_frames_per_10ms": 40,
+   "bus_mean_ms": 0.418,
+   "bus_peak_ms": 0.25,
+   "id_fast_ms": 9.6775,
+   "id_fast": "0x6e0",
+   "ids_aperiodic": [
+    "0xfff",
+    "0x30a",
+    "0x67d"
+   ]
+  },
+  "ROAD/ambient_highway_street_driving_diagnostics": {
+   "frames": 1124751,
+   "duration_s": 469.942,
+   "ids": 106,
+   "ids_periodic": 104,
+   "rate_fps": 2393.4,
+   "peak_frames_per_10ms": 39,
+   "bus_mean_ms": 0.4178,
+   "bus_peak_ms": 0.2564,
+   "id_fast_ms": 10.0,
+   "id_fast": "0xd0",
+   "ids_aperiodic": [
+    "0xfff",
+    "0x25"
+   ]
+  },
+  "ROAD/ambient_highway_street_driving_long": {
+   "frames": 8821916,
+   "duration_s": 3764.318,
+   "ids": 106,
+   "ids_periodic": 104,
+   "rate_fps": 2343.6,
+   "peak_frames_per_10ms": 43,
+   "bus_mean_ms": 0.4267,
+   "bus_peak_ms": 0.2326,
+   "id_fast_ms": 10.004,
+   "id_fast": "0x33",
+   "ids_aperiodic": [
+    "0xfff",
+    "0x671"
+   ]
+  },
+  "HCRL/normal_run": {
+   "frames": 988871,
+   "duration_s": 506.437,
+   "ids": 27,
+   "ids_periodic": 27,
+   "rate_fps": 1952.6,
+   "peak_frames_per_10ms": 28,
+   "bus_mean_ms": 0.5121,
+   "bus_peak_ms": 0.3571,
+   "id_fast_ms": 9.9885,
+   "id_fast": "0x2",
+   "ids_aperiodic": []
+  }
+ },
+ "summary": {
+  "bus_mean_ms": {
+   "ROAD_min": 0.4178,
+   "ROAD_median": 0.41945,
+   "HCRL": 0.5121
+  },
+  "bus_peak_ms": {
+   "ROAD_min": 0.2326,
+   "ROAD_median": 0.2381,
+   "HCRL": 0.3571
+  },
+  "id_fast_ms": {
+   "ROAD_min": 9.6775,
+   "ROAD_median": 10.00055,
+   "HCRL": 9.9885
+  }
+ },
+ "cost_median_ms": {
+  "inference only (no XAI)": 0.281,
+  "SHAP (Tree, exact)": 0.8216,
+  "SHAP (Kernel, model-agnostic)": 632.6565499999999,
+  "LIME": 61.56705
+ },
+ "cost_over_budget": {
+  "inference only (no XAI)": {
+   "bus_mean_ms/ROAD_min": 0.673,
+   "bus_mean_ms/HCRL": 0.549,
+   "bus_peak_ms/ROAD_min": 1.208,
+   "bus_peak_ms/HCRL": 0.787,
+   "id_fast_ms/ROAD_min": 0.029,
+   "id_fast_ms/HCRL": 0.028
+  },
+  "SHAP (Tree, exact)": {
+   "bus_mean_ms/ROAD_min": 1.966,
+   "bus_mean_ms/HCRL": 1.604,
+   "bus_peak_ms/ROAD_min": 3.532,
+   "bus_peak_ms/HCRL": 2.301,
+   "id_fast_ms/ROAD_min": 0.085,
+   "id_fast_ms/HCRL": 0.082
+  },
+  "SHAP (Kernel, model-agnostic)": {
+   "bus_mean_ms/ROAD_min": 1514.257,
+   "bus_mean_ms/HCRL": 1235.416,
+   "bus_peak_ms/ROAD_min": 2719.934,
+   "bus_peak_ms/HCRL": 1771.651,
+   "id_fast_ms/ROAD_min": 65.374,
+   "id_fast_ms/HCRL": 63.338
+  },
+  "LIME": {
+   "bus_mean_ms/ROAD_min": 147.36,
+   "bus_mean_ms/HCRL": 120.225,
+   "bus_peak_ms/ROAD_min": 264.691,
+   "bus_peak_ms/HCRL": 172.408,
+   "id_fast_ms/ROAD_min": 6.362,
+   "id_fast_ms/HCRL": 6.164
+  }
+ }
+}

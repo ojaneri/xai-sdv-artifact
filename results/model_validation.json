@@ -1,0 +1,66 @@
+{
+  "t_fwd_ms": 62.349,
+  "k_bwd": 1.7956,
+  "rows": [
+    {
+      "family": "occlusion",
+      "param": 32,
+      "images": 50,
+      "measured_ms": 3158.2,
+      "predicted_ms": 3117.4,
+      "error_pct": 1.3
+    },
+    {
+      "family": "occlusion",
+      "param": 16,
+      "images": 170,
+      "measured_ms": 10944.9,
+      "predicted_ms": 10599.3,
+      "error_pct": 3.3
+    },
+    {
+      "family": "occlusion",
+      "param": 8,
+      "images": 626,
+      "measured_ms": 40626.4,
+      "predicted_ms": 39030.2,
+      "error_pct": 4.1
+    },
+    {
+      "family": "integrated_gradients",
+      "param": 5,
+      "images": 5,
+      "measured_ms": 572.2,
+      "predicted_ms": 559.8,
+      "error_pct": 2.2,
+      "calibration": true
+    },
+    {
+      "family": "integrated_gradients",
+      "param": 10,
+      "images": 10,
+      "measured_ms": 1136.0,
+      "predicted_ms": 1119.5,
+      "error_pct": 1.5,
+      "calibration": false
+    },
+    {
+      "family": "integrated_gradients",
+      "param": 20,
+      "images": 20,
+      "measured_ms": 2747.7,
+      "predicted_ms": 2239.1,
+      "error_pct": 22.7,
+      "calibration": false
+    },
+    {
+      "family": "integrated_gradients",
+      "param": 50,
+      "images": 50,
+      "measured_ms": 7974.6,
+      "predicted_ms": 5597.7,
+      "error_pct": 42.5,
+      "calibration": false
+    }
+  ]
+}
