@@ -1,0 +1,130 @@
+{
+ "rows": [
+  {
+   "f1": 0.9999751653573291,
+   "recall": 0.9999503319481465,
+   "precision": 1.0,
+   "fpr": 0.0,
+   "family": "spoofing",
+   "train": "HCRL gear+RPM",
+   "test": "HCRL (time split)",
+   "condition": "same vehicle, same family",
+   "prevalence": 0.16778055555555554,
+   "n": 360000
+  },
+  {
+   "f1": 0.9993116424211831,
+   "recall": 0.9997245432008081,
+   "precision": 0.9988990825688073,
+   "fpr": 2.4020802014544597e-05,
+   "family": "spoofing",
+   "train": "ROAD targeted",
+   "test": "ROAD (held-out)",
+   "condition": "same vehicle, same family",
+   "prevalence": 0.021335741628106523,
+   "n": 510458
+  },
+  {
+   "f1": 0.0005393258426966292,
+   "recall": 0.0002754567991919934,
+   "precision": 0.01282051282051282,
+   "fpr": 0.00046240043877998345,
+   "family": "spoofing",
+   "train": "HCRL gear+RPM",
+   "test": "ROAD targeted",
+   "condition": "diff vehicle, same family",
+   "prevalence": 0.021335741628106523,
+   "n": 510458
+  },
+  {
+   "f1": 0.3469896004378763,
+   "recall": 0.20991374314994785,
+   "precision": 1.0,
+   "fpr": 0.0,
+   "family": "spoofing",
+   "train": "ROAD targeted",
+   "test": "HCRL gear+RPM",
+   "condition": "diff vehicle, same family",
+   "prevalence": 0.16778055555555554,
+   "n": 360000
+  },
+  {
+   "f1": 0.9998823321762664,
+   "recall": 0.9997646920407083,
+   "precision": 1.0,
+   "fpr": 0.0,
+   "family": "fuzzing",
+   "train": "HCRL Fuzzy",
+   "test": "HCRL (time split)",
+   "condition": "same vehicle, same family",
+   "prevalence": 0.18887777777777778,
+   "n": 180000
+  },
+  {
+   "f1": 0.991304347826087,
+   "recall": 1.0,
+   "precision": 0.9827586206896551,
+   "fpr": 0.00015239256324291374,
+   "family": "fuzzing",
+   "train": "ROAD fuzzing 1-2",
+   "test": "ROAD fuzzing 3",
+   "condition": "same vehicle, same family",
+   "prevalence": 0.008611572745127662,
+   "n": 13238
+  },
+  {
+   "f1": 0.10414610069101678,
+   "recall": 1.0,
+   "precision": 0.054933611038791984,
+   "fpr": 0.1933401508372747,
+   "family": "fuzzing",
+   "train": "HCRL Fuzzy",
+   "test": "ROAD fuzzing",
+   "condition": "diff vehicle, same family",
+   "prevalence": 0.011113334948541572,
+   "n": 94931
+  },
+  {
+   "f1": 0.0,
+   "recall": 0.0,
+   "precision": 0.0,
+   "fpr": 0.0,
+   "family": "fuzzing",
+   "train": "ROAD fuzzing 1-2",
+   "test": "HCRL Fuzzy",
+   "condition": "diff vehicle, same family",
+   "prevalence": 0.18887777777777778,
+   "n": 180000
+  }
+ ],
+ "timing_mass": {
+  "hcrl_spoof": 0.882944643497467,
+  "road_spoof": 0.19879208505153656,
+  "hcrl_fuzz": 0.5638983249664307,
+  "road_fuzz": 0.03418554365634918
+ },
+ "road_fuzz_label_audit": [
+  {
+   "capture": "fuzzing_attack_1",
+   "frames": 49342,
+   "attack_frac": 0.011977625552267845,
+   "ff_inside": 591,
+   "ff_outside": 1
+  },
+  {
+   "capture": "fuzzing_attack_2",
+   "frames": 32351,
+   "attack_frac": 0.010818830948038701,
+   "ff_inside": 350,
+   "ff_outside": 3
+  },
+  {
+   "capture": "fuzzing_attack_3",
+   "frames": 13238,
+   "attack_frac": 0.008611572745127662,
+   "ff_inside": 114,
+   "ff_outside": 2
+  }
+ ],
+ "road_fuzz_label_safe": true
+}

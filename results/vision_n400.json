@@ -1,0 +1,64 @@
+{
+  "meta": {
+    "seed": 20260823,
+    "model": "resnet18 (2 classes, random init)",
+    "input": "1x3x224x224",
+    "threads": 1,
+    "platform": "x86_64 | AMD EPYC Processor | 8 vCPU | single-threaded measurement",
+    "budget_ms": {
+      "smirk_frame_10fps": 100,
+      "can_ids_detect_respond": 50
+    },
+    "method_note": "random weights: this measures cost, not explanation quality. Cost depends on the architecture and the input size, not on the values of the weights."
+  },
+  "results": [
+    {
+      "method": "inference only (no XAI)",
+      "n": 1200,
+      "images_per_explanation": 1,
+      "module_calls": 1,
+      "warmup": 5,
+      "median_ms": 86.093,
+      "p95_ms": 126.464,
+      "p99_ms": 157.418,
+      "max_ms": 240.091,
+      "x_vs_inference": 1.0
+    },
+    {
+      "method": "Grad-CAM",
+      "n": 400,
+      "images_per_explanation": 1,
+      "module_calls": 1,
+      "warmup": 5,
+      "median_ms": 85.661,
+      "p95_ms": 139.205,
+      "p99_ms": 205.084,
+      "max_ms": 398.056,
+      "x_vs_inference": 1.0
+    },
+    {
+      "method": "Integrated Gradients (50 steps)",
+      "n": 5,
+      "images_per_explanation": 50,
+      "module_calls": 1,
+      "warmup": 2,
+      "median_ms": 8521.526,
+      "p95_ms": 8844.078,
+      "p99_ms": 8844.078,
+      "max_ms": 8844.078,
+      "x_vs_inference": 99.0
+    },
+    {
+      "method": "Occlusion (32x32 stride 16)",
+      "n": 5,
+      "images_per_explanation": 170,
+      "module_calls": 170,
+      "warmup": 2,
+      "median_ms": 13036.858,
+      "p95_ms": 13334.069,
+      "p99_ms": 13334.069,
+      "max_ms": 13334.069,
+      "x_vs_inference": 151.4
+    }
+  ]
+}
