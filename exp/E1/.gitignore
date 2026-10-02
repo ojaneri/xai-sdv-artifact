@@ -1,0 +1,8 @@
+work/
+.venv/
+*.pt
+*.pth
+*.onnx
+*.mp4
+*.avi
+*.zip
