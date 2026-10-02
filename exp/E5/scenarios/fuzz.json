@@ -1,0 +1,3 @@
+{"_doc": "Fuzzing: random ids and payloads at 200 Hz for 5 s.",
+ "attack_ids": ["ANY"], "tail_s": 30,
+ "steps": [{"at": 30, "node": "attacker", "cmd": "FUZZ 200 5000", "attack": "fuzz", "dur_ms": 5000}]}

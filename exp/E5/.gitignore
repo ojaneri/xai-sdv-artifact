@@ -1,0 +1,5 @@
+.pio/
+work/
+.venv/
+results/*/raw/
+!results/.gitkeep

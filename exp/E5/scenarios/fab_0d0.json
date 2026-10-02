@@ -1,0 +1,3 @@
+{"_doc": "Fabrication on 0x0D0 (speedometer, nominal period 10 ms in ROAD ambient): the attacker adds frames at 100 Hz on top of the legitimate ones. Payload observed inside ROAD's max_speedometer_attack_1 window.",
+ "attack_ids": ["0D0"], "tail_s": 30,
+ "steps": [{"at": 30, "node": "attacker", "cmd": "FAB 0D0 100 10000 2272046478FF7A00", "attack": "fab", "dur_ms": 10000}]}

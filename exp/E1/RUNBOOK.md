@@ -97,8 +97,14 @@ rather than experimentally evaluated". E1 is the first experiment that answers i
 - Methods: inference only, Grad-CAM/EigenCAM, Integrated Gradients (50 steps), occlusion.
 - Run n = 400 for the saliency method and n ≥ 100 for the rest, over 4 runs. Report the
   median and p99 with a bootstrap CI.
-- Output: `results/e1_cost_rtx3060.json`. Keep the timing script standalone: the same
-  script will later run on AWS (g5g ARM+T4G, c7g) for E6.
+- The timing script is `exp/E1/cost.py`, standalone, with exactly this interface (E6 calls
+  it on AWS):
+  `python exp/E1/cost.py --device {cuda,cpu} --weights PATH --repeats N --runs 4 --out DIR`.
+  It writes `DIR/cost.json`, takes the input resolution from the weights or SMIRK config, and
+  installs nothing at run time.
+- List its Python dependencies in `exp/E1/requirements-cost.txt`, pinned to the versions you
+  used. PyTorch is excluded: the target installs its own build.
+- Output: `results/e1_cost_rtx3060.json` (copy of `cost.json`).
 
 ## Every JSON result must contain
 

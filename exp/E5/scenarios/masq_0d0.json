@@ -1,0 +1,5 @@
+{"_doc": "Masquerade on 0x0D0: the PC stops replaying the legitimate 0x0D0 (victim suspended) and the attacker sends 0x0D0 at the same 10 ms period with altered payload, so frequency is unchanged and only content differs.",
+ "attack_ids": ["0D0"], "tail_s": 30,
+ "steps": [{"at": 30, "node": "host", "cmd": "SUSPEND 0D0 10000", "attack": "masq", "dur_ms": 10000},
+           {"at": 30, "node": "attacker", "cmd": "PERIODIC 0D0 10000 2272046478FF7A00"},
+           {"at": 40, "node": "attacker", "cmd": "STOP 0D0"}]}

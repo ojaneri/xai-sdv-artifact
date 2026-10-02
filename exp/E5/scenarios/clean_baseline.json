@@ -1,0 +1,2 @@
+{"_doc": "No attack. Measures false-positive rate, verdict latency and replay jitter on clean traffic. Run first, and once more with --gpu-load.",
+ "attack_ids": ["0D0"], "tail_s": 120, "steps": []}
