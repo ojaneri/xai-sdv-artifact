@@ -1,6 +1,14 @@
 # Desktop (RTX 3060) — how to run the experiments and return the results
 
-Server: `ssh -p 2222 root@janeri2.janeri.com.br`. Results go to `/root/xai-results/`, which is
+Server: `ssh -p 2222 root@janeri2.janeri.com.br`.
+
+Where the instructions live:
+- On the server: `/root/xai-sdv-artifact/exp/DESKTOP.md` (a clone of branch
+  `exp/e1-perception`; the runbooks are under `/root/xai-sdv-artifact/exp/`).
+- On GitHub: https://github.com/ojaneri/xai-sdv-artifact/blob/exp/e1-perception/exp/DESKTOP.md
+- To clone from the server instead of GitHub:
+  `git clone -b exp/e1-perception ssh://root@janeri2.janeri.com.br:2222/root/xai-sdv-artifact`
+ Results go to `/root/xai-results/`, which is
 outside the web root on purpose. Only small files go there: JSON, CSV, logs, plots. No
 datasets, weights or videos.
 
